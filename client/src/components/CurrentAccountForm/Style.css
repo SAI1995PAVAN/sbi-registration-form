@@ -1,0 +1,200 @@
+.form-component{
+    width: 90%;
+    margin: auto;
+    padding: 8px;
+    border: 2px solid #A71A59;
+    border-radius: 8px;
+
+}
+
+.form-component-subheading{
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+form{
+width: 100%;
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    padding:0.5em 1em;
+    margin-bottom: 0.5em;
+    align-items: flex-end;
+}
+
+.title,.inputField{
+  width:100%;
+  text-align:left;
+  font-size:20px;
+}
+.title label{
+  display: block;
+  
+}
+
+/* .selectCountry{
+  margin:1em
+} */
+
+.title span{
+  font-size: 0.75rem;
+}
+
+.select{
+  width: 320px;
+}
+
+.inputFields{
+  /* width:70%; */
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap:16px
+  
+}
+
+.singleInputSelect{
+  width:100%;
+  
+}
+
+.dropdown-scroll{
+  max-height:400px;
+  overflow: scroll;
+  
+}
+
+.location-title{
+  text-align: left;
+  color:rgb(98, 95, 95);
+  margin:1em 0 
+}
+.select .please-select{
+  font-size: 0.75em;
+  color:#e775ae
+}
+
+.form-control-radio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width:100% */
+}
+
+.form-control-radio .title{
+  width:100%
+}
+
+.radio-group{
+  display: block;
+}
+.radio-buttons{
+ display: flex;
+ justify-content: flex-start;
+ align-items: flex-end;
+}
+
+.form-checkbox{
+  width:90%
+}
+
+.submit{
+  padding:.5em 2.5em;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1em 0;
+  border-radius: 4px;
+  cursor: pointer;
+  color:#fff;
+  background-color:#A71A59;
+  border-color: #A71A59;
+  font-weight: bold;
+}
+
+.submit:hover{
+  background-color: #531333;
+  border-color: #531333;
+}
+
+.error-message{
+  display: block;
+  font-size: 0.75em;
+  color:red;
+  text-align: left;
+  padding-bottom:1em
+}
+
+.mobile-errors{
+  display: flex;
+  flex-direction: column;
+  gap:0.5em;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------------------------------------------------------------------ */
+@media only screen and (min-width: 600px) {
+  .form-component{
+    max-width: 960px;
+  }
+
+  .form-control{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .inputField{
+    width:60%;
+
+  } 
+  
+  .title{
+    width: 30%;
+  }
+
+  .select{
+    width:60%
+  }
+
+  .inputFields{
+    flex-direction: row;
+    justify-content: space-between;
+    width:60%
+  }
+
+  .singleInputSelect{
+    width:60%
+  }
+
+  .inputFields .selectCountry,.inputFields .mobile{
+    width:45%
+  }
+
+
+  .form-control-radio {
+    flex-direction: row;
+  }
+
+  .form-control-radio .title{
+    width:40%
+  }
+  /* .radio-buttons{
+    width: 50%;
+  } */
+
+  .form-checkbox{
+    width: 100%;
+    max-width: 1200px;
+   margin-left: 0;
+   text-align: left;
+  }
+
+  .error-message{
+    font-size: 0.75em;
+    display: inline;
+  }
+
+  }
